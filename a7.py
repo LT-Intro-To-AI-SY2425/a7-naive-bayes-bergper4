@@ -177,10 +177,11 @@ class BayesClassifier:
                 pos_score += math.log(pos_freqs / (pos_denominator + vocab_size))
                 neg_score += math.log(neg_freqs / (neg_denominator + vocab_size))
 
-        print(pos_score, neg_score)
+        
         # for debugging purposes, it may help to print the overall positive and negative
         # probabilities
-        
+        print(f"Positive Probability: {pos_score}")
+        print(f"Negative Probability: {neg_score}")
 
         # determine whether positive or negative was more probable (i.e. which one was
         # larger)
@@ -326,7 +327,19 @@ if __name__ == "__main__":
     print(b.classify('rainy days are the worst'))
     print(b.classify('computer science is terrible'))
 
-    print()
-    print(b.classify("intro to artificial intelligence is the best class"))
-    print(b.classify("not the best way to do this"))
-    pass
+    # Use this space to complete your analysis assignment
+    print("\nThe following is to test out the method with each groups responses")
+    print(b.classify("Summer break is almost here.  I am super excited and I know that it's going to be the best"))
+    # Complete two more positive sentiment strings
+
+    # Negative sentiment statements
+    print(b.classify("I am nervous that I won't do well on the AP tests.  I have studied, but I don't think I'll do that well"))
+    # Complete two more negative sentiment strings
+
+
+    # Two positive reviews
+
+
+    # Two negative reviews
+
+
